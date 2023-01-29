@@ -1,0 +1,111 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --medum-dark-blue: hsl(215deg 18% 19%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.3s;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 410px;
+  height: 420px;
+  background-color: var(--Dark-Blue);
+  justify-content: space-evenly;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .star {
+  background-color: var(--medum-dark-blue);
+  color: var(--Light-Grey);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 5px #0000002b;
+}
+.container .desc h3 {
+  color: var(--White);
+  font-weight: 400;
+}
+.container .desc p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+}
+
+.container .rate ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+.container .rate ul li {
+  background-color: var(--medum-dark-blue);
+  color: var(--Light-Grey);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 5px hsl(0 0% 0% / 0.09);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .rate ul li.active {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+.container .rate ul li:hover {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+.container .subm {
+  color: var(--White);
+  background-color: var(--Orange);
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.container .subm:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.thank-you {
+  display: none;
+  align-items: center;
+}
+.thank-you .desc {
+  text-align: center;
+}
+.thank-you .desc h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.chose {
+  color: var(--Orange);
+  background-color: var(--medum-dark-blue);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 5px hsl(0 0% 0% / 0.09);
+}
